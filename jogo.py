@@ -105,4 +105,6 @@ with mp_hands.Hands(
         cv2.imshow('Hands', img)
         if cv2.waitKey(25) & 0xFF == ord('g'): 
             break
-        
+
+video.release()
+cv2.destroyAllWindows()       
